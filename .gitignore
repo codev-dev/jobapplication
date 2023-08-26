@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Codev.JobApplication/.vs/Codev.JobApplication
+/Codev.JobApplication/bin/Debug/net6.0
+/Codev.JobApplication/obj
+/Codev.JobApplication.Domain/bin/Debug/net6.0
+/Codev.JobApplication.Domain/obj
+/Codev.JobApplication.Features/bin/Debug/net6.0
+/Codev.JobApplication.Features/obj
