@@ -7,12 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\Applicant\" />
-    <Folder Include="Persistence\JobApplication\" />
+    <Compile Remove="Persistence\Applicant\**" />
+    <Compile Remove="Persistence\JobApplication\**" />
+    <EmbeddedResource Remove="Persistence\Applicant\**" />
+    <EmbeddedResource Remove="Persistence\JobApplication\**" />
+    <None Remove="Persistence\Applicant\**" />
+    <None Remove="Persistence\JobApplication\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DapperExtensions" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Codev.JobApplication.Common\Codev.JobApplication.Common.csproj" />
+    <ProjectReference Include="..\Codev.JobApplication.Dapper\Codev.JobApplication.Dapper.csproj" />
+    <ProjectReference Include="..\Codev.JobApplication.DataRepository\Codev.JobApplication.DataRepository.csproj" />
   </ItemGroup>
 
 </Project>

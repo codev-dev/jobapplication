@@ -10,3 +10,7 @@
 /Codev.JobApplication.Features/bin/Debug/net6.0
 /Codev.JobApplication.Features/obj
 /Codev.JobApplication.Common/obj
+/Codev.JobApplication/.vs/ProjectEvaluation
+/Codev.JobApplication.Dapper/obj
+/Codev.JobApplication.DataRepository/bin/Debug/net6.0
+/Codev.JobApplication.DataRepository/obj

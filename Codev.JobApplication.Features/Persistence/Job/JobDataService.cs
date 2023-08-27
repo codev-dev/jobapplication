@@ -1,36 +1,43 @@
-﻿using Codev.JobApplication.Common.Persistence;
+﻿using Codev.JobApplication.Dapper;
+using Codev.JobApplication.DataRepository;
+
 
 namespace Codev.JobApplication.Features.Persistence.Job
 {
-    public class JobDataService : IRepository
+    public class JobDataService : IDataRepository<Job>
     {
-        public JobDataService()
+        private readonly IDapperBase dapperBase;
+        public JobDataService(IDapperBase dapperBase)
         {
-            
-        }
-        public Task<T> GetAsync<T>(int id)
-        {
-            throw new NotImplementedException();
+            this.dapperBase = dapperBase;
         }
 
-        public Task<IEnumerable<T>> GetManyAsync<T>()
+        public async Task AddAsync(Job entity)
         {
-            throw new NotImplementedException();
+           await dapperBase.InsertAsync(entity);
         }
 
-        public Task InsertAsync<T>(T data)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var data = await GetByIdAsync(id);
+            await dapperBase.DeleteAsync(data);
         }
 
-        public Task Update<T>(int id, T data)
+        public async Task<IEnumerable<Job>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM Job";
+            return await dapperBase.QueryListAsync<Job>(query);
         }
 
-        public Task DeleteAsycn(int id)
+        public async Task<Job> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            string query = "SELECT * FROM Job WHERE id = @id";
+            return await dapperBase.QueryFirstOrDefaultAsync<Job>(query, new { id = id });
+        }
+
+        public async Task UpdateAsync(Job entity)
+        {
+            await dapperBase.UpdateAsync(entity);
         }
     }
 }

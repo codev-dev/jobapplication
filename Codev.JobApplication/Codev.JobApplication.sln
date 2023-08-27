@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codev.JobApplication.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codev.JobApplication.Features", "..\Codev.JobApplication.Features\Codev.JobApplication.Features.csproj", "{3C26E2EE-AEE1-4738-9751-457D783AB8B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication.Common", "..\Codev.JobApplication.Common\Codev.JobApplication.Common.csproj", "{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codev.JobApplication.Common", "..\Codev.JobApplication.Common\Codev.JobApplication.Common.csproj", "{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication.DataRepository", "..\Codev.JobApplication.DataRepository\Codev.JobApplication.DataRepository.csproj", "{C909524C-C250-40F1-94C1-BC12C53FBE85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication.Dapper", "..\Codev.JobApplication.Dapper\Codev.JobApplication.Dapper.csproj", "{5A762673-B448-4641-8163-7725E6B56E67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C909524C-C250-40F1-94C1-BC12C53FBE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C909524C-C250-40F1-94C1-BC12C53FBE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C909524C-C250-40F1-94C1-BC12C53FBE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C909524C-C250-40F1-94C1-BC12C53FBE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A762673-B448-4641-8163-7725E6B56E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A762673-B448-4641-8163-7725E6B56E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A762673-B448-4641-8163-7725E6B56E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A762673-B448-4641-8163-7725E6B56E67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
