@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication", "Codev.JobApplication.csproj", "{A21F45C8-E0B1-48BC-9C0F-FF6299AACA2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codev.JobApplication", "Codev.JobApplication.csproj", "{A21F45C8-E0B1-48BC-9C0F-FF6299AACA2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication.Domain", "..\Codev.JobApplication.Domain\Codev.JobApplication.Domain.csproj", "{4C0FB9A0-948A-4E61-91FA-A8BCAA6E1505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codev.JobApplication.Domain", "..\Codev.JobApplication.Domain\Codev.JobApplication.Domain.csproj", "{4C0FB9A0-948A-4E61-91FA-A8BCAA6E1505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication.Features", "..\Codev.JobApplication.Features\Codev.JobApplication.Features.csproj", "{3C26E2EE-AEE1-4738-9751-457D783AB8B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codev.JobApplication.Features", "..\Codev.JobApplication.Features\Codev.JobApplication.Features.csproj", "{3C26E2EE-AEE1-4738-9751-457D783AB8B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codev.JobApplication.Common", "..\Codev.JobApplication.Common\Codev.JobApplication.Common.csproj", "{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3C26E2EE-AEE1-4738-9751-457D783AB8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C26E2EE-AEE1-4738-9751-457D783AB8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C26E2EE-AEE1-4738-9751-457D783AB8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85560A50-4AB4-452E-BCF1-AEE9CE9975D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

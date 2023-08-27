@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Applicant\" />
+    <Folder Include="Persistence\JobApplication\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Codev.JobApplication.Common\Codev.JobApplication.Common.csproj" />
+  </ItemGroup>
+
 </Project>
