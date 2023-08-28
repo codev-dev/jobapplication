@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Persistence\Applicant\**" />
     <Compile Remove="Persistence\JobApplication\**" />
-    <EmbeddedResource Remove="Persistence\Applicant\**" />
     <EmbeddedResource Remove="Persistence\JobApplication\**" />
-    <None Remove="Persistence\Applicant\**" />
     <None Remove="Persistence\JobApplication\**" />
   </ItemGroup>
 

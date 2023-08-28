@@ -1,6 +1,7 @@
 ﻿using Codev.JobApplication.Dapper;
 using Codev.JobApplication.DataRepository;
 using Codev.JobApplication.Domain.Config;
+using Codev.JobApplication.Features.Persistence.Applicant;
 using Codev.JobApplication.Features.Persistence.Job;
 using Mapster;
 using Microsoft.Extensions.Configuration;
@@ -19,11 +20,15 @@ namespace Microsoft.Extensions.DependencyInjection
             //object mappings
             TypeAdapterConfig<Job, JobRequestDto>
                 .NewConfig();
+            TypeAdapterConfig<Applicant, ApplicantRequestDto>
+                .NewConfig();
 
             services.TryAddScoped<IDapperBase, DapperBase>();
 
             services.TryAddScoped<IDataRepository<Job>, JobDataService>();
             services.TryAddScoped<IJobQueryService, JobDataService>();
+            services.TryAddScoped<IDataRepository<Job>, JobDataService>();
+            services.TryAddScoped<IDataRepository<Applicant>, ApplicantDataService>();
 
         }
     }

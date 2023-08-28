@@ -22,8 +22,8 @@ namespace Codev.JobApplication.Features.Persistence.Job
 
         public async Task<Job> GetByIdAsync(Guid id)
         {
-            string query = "SELECT * FROM Job WHERE id = @id";
-            return await dapperBase.QueryFirstOrDefaultAsync<Job>(query, new { id = id });
+            string query = "SELECT * FROM Job WHERE Id = @Id";
+            return await dapperBase.QueryFirstOrDefaultAsync<Job>(query, new { Id = id });
         }
 
         public async Task<IEnumerable<Job>> FilterJobsAsync(string? keyword, JobIndustryType? jobIndustryType)
