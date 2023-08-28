@@ -3,6 +3,7 @@ using Codev.JobApplication.DataRepository;
 using Codev.JobApplication.Domain.Config;
 using Codev.JobApplication.Features.Persistence.Applicant;
 using Codev.JobApplication.Features.Persistence.Job;
+using Codev.JobApplication.Features.Persistence.JobApplication;
 using Mapster;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -29,7 +30,8 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddScoped<IJobQueryService, JobDataService>();
             services.TryAddScoped<IDataRepository<Job>, JobDataService>();
             services.TryAddScoped<IDataRepository<Applicant>, ApplicantDataService>();
-
+            services.TryAddScoped<IJobApplicationManager, JobApplicationDataService>();
+            services.TryAddScoped<IApplicantQueryService, JobApplicationDataService>();
         }
     }
 }
