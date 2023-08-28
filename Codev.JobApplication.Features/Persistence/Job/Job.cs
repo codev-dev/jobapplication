@@ -6,6 +6,6 @@
         public int? NoOfOpenings { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public int? Industry { get; set; }
+        public JobIndustryType? Industry { get; set; }
     }
 }

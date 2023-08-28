@@ -14,3 +14,6 @@
 /Codev.JobApplication.Dapper/obj
 /Codev.JobApplication.DataRepository/bin/Debug/net6.0
 /Codev.JobApplication.DataRepository/obj
+/Codev.JobApplication.Dapper/bin/Debug/net6.0
+/Codev.JobApplication.Common/bin/Debug/net6.0
+*.user

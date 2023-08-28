@@ -92,7 +92,7 @@ namespace Codev.JobApplication.Dapper
             return fields;
         }
 
-        public async Task<TModel> InsertAsync<TModel>(TModel payload) where TModel : class
+        public async Task<Guid> InsertAsync<TModel>(TModel payload) where TModel : class
         {
             using (var connection = await CreateOpenConnection(ConnectionString))
             {
