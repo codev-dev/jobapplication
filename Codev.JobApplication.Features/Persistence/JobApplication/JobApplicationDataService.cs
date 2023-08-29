@@ -56,7 +56,7 @@ namespace Codev.JobApplication.Features.Persistence.JobApplication
             string query = "  SELECT j.* FROM Job j " +
                 " INNER JOIN JobApplication ja " +
                 " ON ja.JobId = j.Id" +
-                " WHERE ja.ApplicationId = @ApplicantId";
+                " WHERE ja.ApplicantId = @ApplicantId";
 
             return await dapperBase.QueryListAsync<Job.Job>(query, new { ApplicantId = applicantId });
         }
